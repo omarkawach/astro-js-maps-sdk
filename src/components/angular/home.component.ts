@@ -17,13 +17,13 @@ import { Component, CUSTOM_ELEMENTS_SCHEMA, inject } from "@angular/core";
     <calcite-loader label="Loading Power Plants..."></calcite-loader>
   }`,
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
-  providers: [StateService], // ✅ Explicitly provide StateService
+  providers: [StateService],
 })
 export class HomeComponent implements OnInit {
   items: string[] = [];
   selectedItem: string | null = null;
 
-  private readonly stateService = inject(StateService); // ✅ Use inject()n
+  private readonly stateService = inject(StateService);
 
   navigateToMap(item: string) {
     this.selectedItem = item;
