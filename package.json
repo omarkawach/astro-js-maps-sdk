@@ -1,0 +1,34 @@
+{
+    "name": "astro-js-maps-sdk",
+    "version": "0.0.1",
+    "private": true,
+    "scripts": {
+        "dev": "astro dev",
+        "build": "astro build",
+        "preview": "astro preview",
+        "astro": "astro"
+    },
+    "dependencies": {
+        "@analogjs/astro-angular": "^1.14.0",
+        "@angular/common": "^19.0.0",
+        "@angular/compiler": "^19.0.0",
+        "@angular/core": "^19.0.0",
+        "@angular/platform-browser": "^19.0.0",
+        "@angular/platform-browser-dynamic": "^19.0.0",
+        "@angular/router": "^19.2.0",
+        "@arcgis/core": "^4.32.3",
+        "@arcgis/map-components": "^4.32.7",
+        "@astrojs/react": "^4.2.1",
+        "@esri/calcite-components": "^3.0.3",
+        "astro": "^5.4.1",
+        "react": "^19.0.0",
+        "react-dom": "^19.0.0",
+        "react-router-dom": "^7.2.0",
+        "rxjs": "^7.8.1",
+        "zone.js": "^0.15.0"
+    },
+    "devDependencies": {
+        "@types/react": "^19.0.0",
+        "@types/react-dom": "^19.0.0"
+    }
+}

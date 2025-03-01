@@ -1,0 +1,11 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { MapComponent } from "../components/angular/map.component";
+
+// Get the filter query parameter from the URL
+const filter = Astro.url.searchParams.get("filter") ?? "";
+---
+
+<Layout>
+    <MapComponent client:visible filter={filter} />
+</Layout>

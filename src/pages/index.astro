@@ -1,0 +1,39 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { HomeComponent } from "../components/angular/home.component";
+---
+
+<Layout>
+  <main>
+    <!-- Angular component running its own island -->
+    <HomeComponent client:visible />
+
+    <!-- Static HTML -->
+    <div class="astro-static">
+      <h2>Static HTML</h2>
+      <p>
+        With Astro Islands, mix and match components from different frameworks
+        on the same page, with each running in isolation without affecting the
+        others.
+      </p>
+    </div>
+  </main>
+</Layout>
+
+<style>
+  main {
+    margin: 0 auto;
+    padding: 2rem;
+  }
+
+  .astro-static {
+    background-color: rgba(128, 128, 128, 0.333);
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .astro-static h2 {
+    margin-top: 0;
+  }
+</style>
