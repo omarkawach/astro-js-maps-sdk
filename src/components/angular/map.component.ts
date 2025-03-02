@@ -48,7 +48,7 @@ export class MapComponent implements OnInit {
       const urlParams = new URLSearchParams(window.location.search);
       this.filter = urlParams.get("filter") ?? ""; // Get 'filter' from URL
 
-      const mapElement = document.querySelector("arcgis-map");
+      const mapElement = document.querySelector("arcgis-map") as HTMLArcgisMapElement;
       if (mapElement) {
         mapElement.map = new Map({
           basemap: "gray-vector",
